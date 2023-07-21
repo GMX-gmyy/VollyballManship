@@ -1,0 +1,6 @@
+framework module Pods_VollyballManship {
+  umbrella header "Pods-VollyballManship-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,24 @@
+PODS:
+  - ObjectMapper (4.2.0)
+  - SnapKit (5.6.0)
+  - SwiftDate (6.3.1)
+
+DEPENDENCIES:
+  - ObjectMapper
+  - SnapKit
+  - SwiftDate
+
+SPEC REPOS:
+  trunk:
+    - ObjectMapper
+    - SnapKit
+    - SwiftDate
+
+SPEC CHECKSUMS:
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
+
+PODFILE CHECKSUM: 41b6916f8da5b568758805a05aea5f798a828e46
+
+COCOAPODS: 1.11.3
