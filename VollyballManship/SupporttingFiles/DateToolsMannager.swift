@@ -23,7 +23,7 @@ class DateToolsMannager: NSObject {
         var comps: DateComponents = DateComponents()
         comps = calendar.dateComponents([.year, .month, .day, .weekday, .hour, .minute, .second], from: date)
         let weekDay = comps.weekday! - 1
-        let array = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"]
+        let array = ["Sun.", "Mon.", "Tues.", "Wed.", "Thur.", "Fri.", "Sat."]
         return array[weekDay]
     }
 

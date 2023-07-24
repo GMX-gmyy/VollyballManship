@@ -79,9 +79,9 @@ class BaseFirstView: UIView {
         HeadView.addSubview(headTitleLabel)
         headTitleLabel.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
-            make.width.equalTo(120)
+            make.centerX.equalToSuperview()
+            make.width.equalToSuperview()
             make.height.equalTo(30)
-            make.left.equalTo((kScreenWidth - 120) / 2)
         }
         
         let rightTap = UITapGestureRecognizer(target: self, action: #selector(rightTap))

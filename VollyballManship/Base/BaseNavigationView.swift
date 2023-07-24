@@ -58,7 +58,7 @@ class BaseNavigationView: UIView {
         
         barView.addSubview(naviTitle)
         naviTitle.snp.makeConstraints { make in
-            make.width.equalTo(100)
+            make.width.equalTo(150)
             make.height.equalTo(30)
             make.center.equalToSuperview()
         }

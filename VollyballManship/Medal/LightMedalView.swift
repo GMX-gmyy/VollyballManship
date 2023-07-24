@@ -12,7 +12,7 @@ class LightMedalView: UIView {
     
     private lazy var getMedalLabel: UILabel = {
         let label = UILabel()
-        label.text = "恭喜您获得称号："
+        label.text = "Congratulations on your designation:"
         label.font = .systemFont(ofSize: 16, weight: .bold)
         label.textAlignment = .center
         return label
@@ -37,7 +37,7 @@ class LightMedalView: UIView {
     
     private lazy var medalNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "排球达人"
+        label.text = "Volleyball master"
         label.font = .systemFont(ofSize: 16, weight: .bold)
         label.textAlignment = .center
         return label

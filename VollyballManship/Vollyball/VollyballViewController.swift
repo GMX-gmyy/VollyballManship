@@ -42,7 +42,7 @@ class VollyballViewController: BaseViewController{
     
     private lazy var clockLinkLabel: UILabel = {
         let label = UILabel()
-        label.text = "今天也要加油啊～"
+        label.text = "We need to cheer up today, too～"
         label.font = .systemFont(ofSize: 20, weight: .semibold)
         return label
     }()
@@ -80,7 +80,7 @@ class VollyballViewController: BaseViewController{
         button.backgroundColor = UIColor(red: 133 / 255, green: 192 / 255, blue: 248 / 255, alpha: 1)
         button.layer.cornerRadius = 16
         button.layer.masksToBounds = true
-        button.setTitle("今日打卡", for: .normal)
+        button.setTitle("Clock", for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 24, weight: .heavy)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action: #selector(jumpEvent), for: .touchUpInside)
@@ -103,7 +103,7 @@ class VollyballViewController: BaseViewController{
     }
     
     private func setupUI() {
-        bgView.headTitle = "首页"
+        bgView.headTitle = "Home"
         view.backgroundColor = .white
         bgView.rightImageIsHidden = false
         
@@ -190,7 +190,7 @@ class ClockCell: UICollectionViewCell {
         let label = UILabel()
         label.textColor = .white
         label.textAlignment = .center
-        label.font = .systemFont(ofSize: 15, weight: .semibold)
+        label.font = .systemFont(ofSize: 13, weight: .semibold)
         label.isUserInteractionEnabled = false
         return label
     }()
@@ -244,7 +244,7 @@ class ClockCell: UICollectionViewCell {
                 }
                 clockImageView.image = hasRecord ? UIImage(named: "clock") : UIImage(named: "unclock")
                 if (Calendar.current.isDateInToday(date)) {
-                    clockLabel.text = "今日"
+                    clockLabel.text = "Today"
                 } else {
                     clockLabel.text = week
                 }

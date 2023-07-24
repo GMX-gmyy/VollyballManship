@@ -54,7 +54,7 @@ class ClockRecordViewController: BaseViewController {
     }
     
     private func setupUI() {
-        clockBgView.headTitle = "锻炼记录"
+        clockBgView.headTitle = "Exercise record"
         clockBgView.rightImageIsHidden = false
         view.addSubview(clockBgView)
         clockBgView.snp.makeConstraints { make in

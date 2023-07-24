@@ -39,7 +39,7 @@ class RecordDetailViewController: BaseViewController {
     
     private func setupUI() {
         
-        naviView.naviTitle.text = "记录"
+        naviView.naviTitle.text = "Records"
         
         view.addSubview(recordDetailView)
         recordDetailView.snp.makeConstraints { make in

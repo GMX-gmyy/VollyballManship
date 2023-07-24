@@ -29,7 +29,7 @@ class SettingViewController: BaseViewController {
     
     private lazy var privacyLabel: UILabel = {
         let label = UILabel()
-        label.text = "隐私政策"
+        label.text = "Privacy Policy"
         label.font = .systemFont(ofSize: 18, weight: .semibold)
         label.textAlignment = .left
         return label
@@ -43,7 +43,7 @@ class SettingViewController: BaseViewController {
     
     private func setupUI() {
         
-        naviView.naviTitle.text = "设置"
+        naviView.naviTitle.text = "Setting"
         
         let privacyTap = UITapGestureRecognizer(target: self, action: #selector(privacyTap))
         privacyView.addGestureRecognizer(privacyTap)

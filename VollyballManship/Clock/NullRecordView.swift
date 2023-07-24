@@ -18,7 +18,7 @@ class NullRecordView: UIView {
     
     private lazy var promptLabel: UILabel = {
         let label = UILabel()
-        label.text = "目前还没有记录呦～"
+        label.text = "There is no record yet~"
         label.textColor = UIColor(red: 133 / 255, green: 192 / 255, blue: 248 / 255, alpha: 1)
         label.font = .systemFont(ofSize: 14)
         label.textAlignment = .center

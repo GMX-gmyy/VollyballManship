@@ -16,22 +16,22 @@ enum MedalType {
     var name: String {
         switch self {
         case .medal1:
-            return "排球达人"
+            return "Volleyball master"
         case .medal2:
-            return "排球能手"
+            return "Volleyball expert"
         case .medal3:
-            return "排球健将"
+            return "Volleyball native"
         }
     }
     
     var content: String {
         switch self {
         case .medal1:
-            return "获奖条件：坚持运动打卡一周"
+            return "Award condition: Keep exercising for a week"
         case .medal2:
-            return "获奖条件：坚持运动打卡一月"
+            return "Award condition: Keep exercising for a month"
         case .medal3:
-            return "获奖条件：坚持运动打卡一年"
+            return "Award condition: Keep exercising for a year"
         }
     }
 }
@@ -69,7 +69,7 @@ class MedalViewController: BaseViewController {
     
     private func setupUI() {
         medalBgView.headImage = "bgHead"
-        medalBgView.headTitle = "荣誉墙"
+        medalBgView.headTitle = "Wall of Fame"
         medalBgView.rightImageIsHidden = true
         view.backgroundColor = .white
         
@@ -148,14 +148,12 @@ class MedalCell: UITableViewCell {
     
     private lazy var medalNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "排球健将"
         label.font = .systemFont(ofSize: 18, weight: .bold)
         return label
     }()
     
     private lazy var medalConditionLabel: UILabel = {
         let label = UILabel()
-        label.text = "获得条件：坚持运动打卡一周"
         label.font = .systemFont(ofSize: 13)
         label.textColor = .red
         label.numberOfLines = 0

@@ -21,7 +21,7 @@ class ClockViewController: BaseViewController {
     
     private lazy var dataLabel: UILabel = {
         let label = UILabel()
-        label.text = "日期:"
+        label.text = "Date:"
         label.font = .systemFont(ofSize: 18, weight: .semibold)
         return label
     }()
@@ -51,7 +51,7 @@ class ClockViewController: BaseViewController {
     
     private lazy var saveButton: UIButton = {
         let button = UIButton()
-        button.setTitle("保存", for: .normal)
+        button.setTitle("Save", for: .normal)
         button.backgroundColor = UIColor(red: 133 / 255, green: 192 / 255, blue: 248 / 255, alpha: 1)
         button.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
         button.setTitleColor(.black, for: .normal)
@@ -73,7 +73,7 @@ class ClockViewController: BaseViewController {
     }
     
     private func setupUI() {
-        naviView.naviTitle.text = "今日打卡"
+        naviView.naviTitle.text = "Clock in today"
         
         view.addSubview(headView)
         headView.snp.makeConstraints { make in
@@ -124,7 +124,7 @@ class ClockViewController: BaseViewController {
         model.record = recordContentTextView.text
         ClockRecordManager.shared.saveRecordDays(date: Date())
         ClockRecordManager.shared.saveRecordInfo(model: model)
-        let alertView = UIAlertController(title: "", message: "保存成功!", preferredStyle: .alert)
+        let alertView = UIAlertController(title: "", message: "Save successfully!", preferredStyle: .alert)
         self.present(alertView, animated: true)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
             alertView.dismiss(animated: true)
